@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Spectral:wght@300&display=swap');
+
+/*  
+font-family: 'Roboto', sans-serif;
+font-family: 'Spectral', serif; 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h4{
+    font-family: 'Spectral', serif; 
+}
+header , section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffc017;
+    border-bottom: 1px solid #191919;;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    flex-basis: 50%;
+    margin-right: 2%;
+}
+header>div>img{
+    padding: 10%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.8em;
+}
+#cinque{
+    background-color: #191919;
+    border-radius: 20px;
+    color: white;
+    padding: 5%;
+}
+h1{
+    font-size: 3em;
+    font-weight: 40%;
+}
+section > div:nth-child(1)> p:nth-child(2){
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+}
+section > div:nth-child(1) > p:nth-child(3){
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 1%;
+    color: white;
+    width: 30%;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+#contTitolo{
+    padding: 5%;
+}
+#contTitoloArticle{
+    display: flex;
+    align-items: center;
+    margin: 5% 5%;
+    margin-left: 15%;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+article{
+    padding: 2%;
+}
+article:nth-child(7){
+    margin-bottom: 5%;
+    border-bottom: 1px solid #19191927;
+}
+.contArticle{
+    display: flex;
+    align-items: start;
+    margin-left: 15%;
+    font-family: 'Roboto', sans-serif;
+}
+.settingImageProfilo{
+    border-radius: 50%;
+    width: 5vw;
+}
+.proPicAndText{
+    display: flex;
+    align-items: center;
+}
+.proPicAndText>p{
+    margin-left: 3%;
+    font-weight: bold;
+}
+span{
+    font-weight: normal;
+    opacity: 0.5;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.3;
+    font-size: 0.7em;
+}
+.boldText{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 5%;
+}
+.contText{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.contNumero>p{
+    opacity: 0.3;
+    font-size: 2em;
+    margin-top: 20%;
+}
+aside{
+    padding: 5%;
+}
+aside>div>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside > div > div > p{
+    border: 1px solid #191919;
+    opacity: 0.3;
+    margin: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+#similFooter{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.3;
+    font-size: 0.7em;
+    border-top: 1px solid #19191963;
+}
+#similFooter>p{
+    margin: 2%;
+    padding-top: 5%;
+}
+.autNews{
+    display: flex;
+    align-items: center;
+}
+.autNews p {
+    font-size: 0.8em;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titleNews p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+.titleNews p:first-child{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.titleNews p:last-child{
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    opacity: 0.5;
+}
+
+.dateNews{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 70%;
+}
+.fotoNews{
+    flex-basis: 35%;
+}
+.fotoNews img{
+    width: 100%;
+    height: auto;
+    margin-right: 20%;
+}
+.fleContStar{
+    display: flex;
+}
+.fleContStar p{
+    background-color: rgba(128, 128, 128, 0.178);
+    border-radius: 30%;
+    padding: 5% 15%;
+}
+.dateNews p {
+    color: #191919;
+    opacity: 0.5;
+}
+.contNews{
+    flex-basis: 60%;
+}
+.infoNews{
+    display: flex;
+}
+.fleContBookmark{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 25%;
+    align-items: center;
+}
+.news{
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+.scroll {
+    background-color: white;
+}
+.green{
+    background-color: #1a8917;
+}
+@media screen and (min-width:400px) {
+    #uno,#due,#tre{
+        display: none;
+    }
+    svg{
+        display: none;
+    }
+}
+@media screen and (min-width:700px) {
+    #uno,#due,#tre{
+        display: block;
+    }
+    svg{
+        display: block;
+    }
+    #cinque{
+        padding: 2%;
+    }
+    section > div:nth-child(1) > p:nth-child(3){
+        width: 40%;
+    }
+    .flexContArt{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .contArticle{
+        flex-basis: 50%;
+    }
+    main > div:nth-child(3){
+        justify-content: space-evenly;
+    } /* ho provato a sistemarli in piu' modi ma avendo il primo div un titolo minore mi occupa meno spazio e non sono riuscito a metterli come i div da 3 a 6 */
+}
+
+
+
+@media screen and (min-width:1200px) {
+    #cinque{
+        padding: 1%;
+    }
+    #sectionArticleDiv{
+        position: relative;
+    }
+    #sectionArticleDiv > div:nth-child(2) > article:nth-child(1) > div{
+        position: absolute;
+        right: 100px;
+        width: 25%;
+        top: 20px;
+    }
+    #sectionArticleDiv > div:nth-child(2) > article:nth-child(2){
+        position: absolute;
+        left: -30px;
+        width: 35%;
+        top: 220px;
+    }
+    #sectionArticleDiv > div:nth-child(3) > article:nth-child(1) > div{
+        position: relative;
+        right: -320px;
+        width: 60%;
+        top: -20px;
+    }
+    #sectionArticleDiv > div:nth-child(3) > article:nth-child(2) > div{
+        position: relative;
+        right: -180px;
+        width: 100%;
+        top: -20px;
+    }
+    #sectionArticleDiv > div:nth-child(2) > article:nth-child(3){
+        position: relative;
+        right: -380px;
+        width: 100%;
+        top: -20px;
+    }
+    #sectionDesktop{
+        position: relative;
+    }
+    aside{
+        position: absolute;
+        right: 0;
+        width: 45%;
+    }
+    #sectionNewsDesktop{
+        width: 60%;
+    }
+    .autNews p {
+        font-size: 1.3em;
+    }
+    .titleNews p:first-child{
+        font-size: 2em;
+    }
+    .titleNews p:last-child{
+        white-space: nowrap; 
+        width: 200px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        opacity: 0.5;
+        font-size: 1rem;
+    }
+    #similFooter{
+        font-size: 1rem;
+    }
+}
