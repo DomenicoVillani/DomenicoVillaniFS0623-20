@@ -229,6 +229,7 @@ h3{
 }
 .scroll {
     background-color: white;
+    transition-duration: 1.5s;
 }
 .green{
     background-color: #1a8917;
